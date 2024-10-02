@@ -1,3 +1,4 @@
+/* General Page Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f8;
@@ -9,6 +10,7 @@ body {
     min-height: 100vh;
 }
 
+/* Container Styles */
 .container {
     width: 100%;
     max-width: 500px;
@@ -16,8 +18,10 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* To ensure logout button is positioned within the container */
 }
 
+/* Header Styles */
 .header {
     text-align: center;
     margin-bottom: 2rem;
@@ -29,6 +33,28 @@ body {
     margin: 0;
 }
 
+/* Logout Button Styles */
+.logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logout-button button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.logout-button button:hover {
+    background-color: #c0392b;
+}
+
+/* Form Group Styles */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -56,11 +82,13 @@ body {
     border-color: #3498db;
 }
 
+/* Scrollable Select Box Styles */
 .scrollable-select {
     max-height: 200px;
     overflow-y: auto;
 }
 
+/* Button Styles */
 .button {
     width: 100%;
     padding: 0.75rem;
@@ -77,6 +105,7 @@ body {
     background-color: #2980b9;
 }
 
+/* Media Query for Small Screens */
 @media (max-width: 600px) {
     .container {
         width: 90%;
@@ -84,7 +113,7 @@ body {
     }
 }
 
-/* Styling for WebKit browsers (Chrome, Safari) */
+/* Scrollbar Styles for WebKit Browsers (Chrome, Safari) */
 .scrollable-select::-webkit-scrollbar {
     width: 8px;
 }
@@ -102,7 +131,7 @@ body {
     background: #555;
 }
 
-/* Styling for Firefox */
+/* Scrollbar Styles for Firefox */
 .scrollable-select {
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;

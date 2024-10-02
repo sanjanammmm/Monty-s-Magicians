@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Club Space</title>
     <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
 </head>
+
 <body>
     <div class="container">
+        <!-- Logout Button positioned at the top right -->
+        <div class="logout-button">
+            <a href="/logout"><button>Logout</button></a>
+        </div>
+
+        <!-- Header -->
         <div class="header">
             <h1>Book a Club Space</h1>
         </div>
+
+        <!-- Booking Form -->
         <form action="/bookings/" method="post">
             <div class="form-group">
                 <label for="club_name">Club Name:</label>
@@ -54,7 +64,7 @@
                 <label for="start_time">Start Time:</label>
                 <select id="start_time" name="start_time" required>
                     {% for hour in range(16, 24) %}
-                        <option value="{{ '%02d' % hour }}:00">{{ '%02d' % hour }}:00</option>
+                    <option value="{{ '%02d' % hour }}:00">{{ '%02d' % hour }}:00</option>
                     {% endfor %}
                 </select>
             </div>
@@ -62,8 +72,5 @@
         </form>
     </div>
 </body>
+
 </html>
-
-
-
-
