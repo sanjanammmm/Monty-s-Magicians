@@ -69,3 +69,7 @@ Our project utilizes the following key artifacts:
 
 1. Clone the repository
 2. Run the application: `uvicorn main:app --reload`
+
+## Contributing
+
+We welcome contributions to improve the Clubs Event Booking Website. Please feel free to submit issues and pull requests.
